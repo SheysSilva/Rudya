@@ -5,7 +5,7 @@ import pandas as pd
 
 app = Flask('contagilAppFlask', template_folder='template')
 
-data = pd.read_csv('data/data1.txt', sep="|")
+data = pd.read_csv('data/data.txt', sep="|")
 df = pd.DataFrame(data, columns=['Chave_de_acesso','Valor_total_prod', 'Descricao_do_Produto_ou_servicos'])
 
 @app.route("/")
