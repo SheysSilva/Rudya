@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista</title>
+</head>
+<body>
+	<div>
+		<form method="GET">
+			<input type="text" name="description">
+			<input type="submit">
+		</form>
+	</div>
+
+	{% for table in tables %}
+	            {{titles[loop.index]}}
+	            {{ table|safe }}
+	{% endfor %}
+
+</body>
+</html>
